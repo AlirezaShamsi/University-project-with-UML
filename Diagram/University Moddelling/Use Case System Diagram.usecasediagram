@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="a4de1a50-5f08-4b35-ab02-0c425afa0817" name="applications for each sector chart" linkedPackageId="cf4a8d68-1511-466f-b487-631817c535ef" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="77dcc57b-7f44-4d38-b96f-ea5b31e4554f" name="Web Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="74d63907-8600-4af5-8c73-ca6a78065cc3" />
+        <targetEnds>
+          <association Id="8ac3d998-377a-49f8-a422-9a9af48dfbec" isDerived="false" sourceEndRoleName="Web Admin" targetEndRoleName="UseCase2" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0b4fbc9f-c936-4b01-ad47-b54ce49a8472" LastKnownName="User Management" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d581247f-6872-4268-bd60-8819c7323c7a" name="Web Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b2b32054-cd29-4cdd-93ad-ffda907c7687" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="042ac096-4c5b-401b-abd4-f10c7df8350a" name="UseCase2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f13173bf-0b42-462a-a8c3-0120e01ac60d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9470cddd-9ae2-43d1-9d7c-65e1778dcfbf" />
+          </association>
+          <association Id="63e20299-c805-45ea-9844-381998a69404" isDerived="false" sourceEndRoleName="Web Admin" targetEndRoleName="Category Management" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7bac45c1-14f2-43bd-b0a3-cebc60206533" LastKnownName="Category Management" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b61b9ab-b000-4682-831b-c0ca3063423b" name="Web Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="26400de1-fd88-41df-9e33-1b0ccf690392" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9c0b55da-48d3-400e-99d6-24cfb48dc4fd" name="Category Management" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2bad2dfe-3291-49f3-ba9f-6ad18cb089d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51829976-7ad7-4f3e-ba2d-58b043cc4914" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0e898c5e-a656-4a9f-a69c-a34b9c9e2fb4" name="Authentication system" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="36b1a296-0d94-425e-827d-70aad4fc13b2" name="realization" profile="StandardProfileL2">
+            <elementDefinition Id="43aa5452-51a8-480e-ad00-8f1ff4b62419" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="b08c22e4-56a6-4827-8c41-cb80a10ac3b9" />
+        <targetEnds>
+          <association Id="8646807d-f839-4abe-9482-6f5e48ef4cca" isDerived="false" sourceEndRoleName="Authentication system" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="710903dd-17a3-4f02-8a5b-14645c696007" LastKnownName="User Validation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06775ba0-ae96-4c32-94c1-4f672df8f1d8" name="Authentication system" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2df67890-7ae3-45e7-8ff9-e0d4a5e17a71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="44aad4f7-8bf1-49de-9921-556fa48ab314" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31658a42-d8f4-4ee2-b6ff-b7078201fcb0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2e0537e4-e2b7-4801-8946-adfe45c64704" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="710903dd-17a3-4f02-8a5b-14645c696007" name="User Validation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8935a382-c758-4796-b80f-471364f1c364" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0b4fbc9f-c936-4b01-ad47-b54ce49a8472" name="User Management" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb1e9847-fe60-487e-ae50-30daaad50b07" />
+        <additions>
+          <include Id="de289386-a726-4b12-ba92-a0d51a17236d">
+            <useCaseMoniker Id="710903dd-17a3-4f02-8a5b-14645c696007" LastKnownName="User Validation" />
+            <elementDefinition Id="8a387caa-ca33-4d67-a582-16e1e63a48be" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="34420c4f-9ab4-43e5-b2e7-fd80dbfa6c85" name="Delete User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="28687733-89d0-4360-a28e-e8f3fd1e5348" />
+        <generalsInternal>
+          <generalization Id="ad830899-2d02-43c7-a914-59e49d86ed01" isSubstitutable="false">
+            <useCaseMoniker Id="0b4fbc9f-c936-4b01-ad47-b54ce49a8472" LastKnownName="User Management" />
+            <elementDefinition Id="b1e7d49b-ad24-4064-85ae-266b61841ca8" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f53449e7-2239-4d24-b307-aa3747234f14" name="Create an access level" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="728a831e-ea9a-4215-bec2-2f6c26ed0664" />
+        <generalsInternal>
+          <generalization Id="b88cfe9d-fda5-4985-8bfa-a338bb989584" isSubstitutable="false">
+            <useCaseMoniker Id="0b4fbc9f-c936-4b01-ad47-b54ce49a8472" LastKnownName="User Management" />
+            <elementDefinition Id="15e2a057-b092-4295-92fc-531a5e0fe5c8" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f8034e62-e7e1-4a78-8708-4502a9803d98" name="Edit User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0abb846-9f0a-4559-b1a8-6550eea3eca8" />
+        <generalsInternal>
+          <generalization Id="89845cac-3688-4330-9fe1-bfa56eb297bd" isSubstitutable="false">
+            <useCaseMoniker Id="0b4fbc9f-c936-4b01-ad47-b54ce49a8472" LastKnownName="User Management" />
+            <elementDefinition Id="0f36a437-797f-4e39-bf58-364596af3579" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c8875953-a43e-4630-a297-28b50f04adeb" name="User List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="068e86db-685f-4fc7-be7b-3ab77dba8fa7" />
+        <generalsInternal>
+          <generalization Id="920deb98-abbb-4485-9101-0d9bbb2e1157" isSubstitutable="false">
+            <useCaseMoniker Id="0b4fbc9f-c936-4b01-ad47-b54ce49a8472" LastKnownName="User Management" />
+            <elementDefinition Id="bbd540e8-1cc1-4cf6-a91b-83013640c303" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="806be107-8f2d-49aa-b1b9-3284e01a5f3d" name="Creat New User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="25171f3c-de08-4754-bb9b-0bae97520e15" />
+        <generalsInternal>
+          <generalization Id="ef0801b4-d7da-4537-80eb-ddb8e1d52fdb" isSubstitutable="false">
+            <useCaseMoniker Id="0b4fbc9f-c936-4b01-ad47-b54ce49a8472" LastKnownName="User Management" />
+            <elementDefinition Id="e6c9a807-169b-4634-90a2-64384607e10f" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7bac45c1-14f2-43bd-b0a3-cebc60206533" name="Category Management" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="77e5c929-287f-4835-aa2a-1c619567d66f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fded1522-fee0-4231-ac5a-6ca538251f3c" name="Delet Category" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="86475c52-faed-48ef-87b3-9bf14ca8241a" />
+        <generalsInternal>
+          <generalization Id="c972af82-ce3b-4d56-9819-239b4f6c68c1" isSubstitutable="false">
+            <useCaseMoniker Id="7bac45c1-14f2-43bd-b0a3-cebc60206533" LastKnownName="Category Management" />
+            <elementDefinition Id="b9d9a535-e764-4f1d-8d55-60b9af3108f1" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b91c05f6-29d8-44fe-9895-959f88bbf87a" name="Edit Category " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1de3553-a469-46f6-afeb-6df51266d2d4" />
+        <generalsInternal>
+          <generalization Id="37e36c9f-6de2-4f56-9bb6-ea29e4bdba98" isSubstitutable="false">
+            <useCaseMoniker Id="7bac45c1-14f2-43bd-b0a3-cebc60206533" LastKnownName="Category Management" />
+            <elementDefinition Id="da57e986-abbb-437e-863a-ca7f000d86fb" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="211526fa-d271-447e-bf32-efc63c5ea586" name="Category List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd6db4e3-7b5a-44f0-a246-11f1c78f7e7c" />
+        <generalsInternal>
+          <generalization Id="94261bde-6e6e-4499-a93b-9fc3b82bebf2" isSubstitutable="false">
+            <useCaseMoniker Id="7bac45c1-14f2-43bd-b0a3-cebc60206533" LastKnownName="Category Management" />
+            <elementDefinition Id="b3da9d2a-5c3c-4d75-a056-5b71cc16f6d6" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c0b7be10-f2b6-4db6-8bbe-2efabca69304" name="Add Category" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="105bd88d-2f36-4126-a666-3a7af1e1f15b" />
+        <generalsInternal>
+          <generalization Id="70ce271c-57d7-4189-ab75-a1766e624217" isSubstitutable="false">
+            <useCaseMoniker Id="7bac45c1-14f2-43bd-b0a3-cebc60206533" LastKnownName="Category Management" />
+            <elementDefinition Id="5cff7855-816a-449a-a8e5-5051cc0a8543" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="cf4a8d68-1511-466f-b487-631817c535ef" name="University Moddelling">
+    <elementDefinition Id="e47e4ba9-10ca-483e-b694-9b02435d535b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f0759850-a535-49ab-8fa6-d8ddc4bdf4b4">
+        <profileInstance Id="e696bf5d-d8ab-4f36-9c94-952956d0d1e3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e46a4052-82db-4f79-a088-897ea7f2bfbf">
+        <profileInstance Id="d2334724-c970-4f19-a870-3e15c979a224" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

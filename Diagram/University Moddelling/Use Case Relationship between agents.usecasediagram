@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="6c249eed-6cd2-40f5-805e-e6d9f4b376db" name="Relationship between agents" linkedPackageId="59adfa37-e843-4d6e-9c9d-ccf5743a8dbe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="2ae219f1-e110-4fed-ba8c-4018e2ccb8fe" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d85b78b-3a3e-410d-9400-4f6e88f0ed47" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="045e635d-d060-486a-81fa-74a2839ec861" name="Student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="19dd5e05-aaf9-415b-8d03-43f15e592b83" />
+        <generalsInternal>
+          <generalization Id="bd2b035a-acb0-4a17-9cfe-de8e02ec682c" isSubstitutable="false">
+            <actorMoniker Id="2ae219f1-e110-4fed-ba8c-4018e2ccb8fe" LastKnownName="User" />
+            <elementDefinition Id="a7c5807d-b20d-4818-bcea-5b0c1ca6d318" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6ee9750a-0a74-4d4a-b236-a84cb5a340d5" name="Web Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="74d63907-8600-4af5-8c73-ca6a78065cc3" />
+        <generalsInternal>
+          <generalization Id="79f2acae-3f0e-4f87-a448-512299cc810c" isSubstitutable="false">
+            <actorMoniker Id="2ae219f1-e110-4fed-ba8c-4018e2ccb8fe" LastKnownName="User" />
+            <elementDefinition Id="a4513a64-dd12-4153-b8a3-ee4a6a4eef85" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="28bc31be-493d-49ce-a048-aeb73c4d0e7e" name="Power User" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="bff36bd2-923a-472e-814e-80465c88547d" name="specification" profile="StandardProfileL2">
+            <elementDefinition Id="1a2725a4-b779-4044-a572-60ac3eb63ec1" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="93d5faa0-b1a3-42c7-bd61-98799e5a3ca1" />
+        <generalsInternal>
+          <generalization Id="48b75720-4b5b-4c5a-b5cc-988ba903ca46" isSubstitutable="false">
+            <actorMoniker Id="2ae219f1-e110-4fed-ba8c-4018e2ccb8fe" LastKnownName="User" />
+            <elementDefinition Id="85dbe571-01c7-40e9-b2a3-e01f6932e1a2" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7f947ecf-4026-4b82-b875-e7e55bbb8b35" name="Authentication system" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2f8b6248-8853-45cd-9b50-11df6c56a66a" name="realization" profile="StandardProfileL2">
+            <elementDefinition Id="43aa5452-51a8-480e-ad00-8f1ff4b62419" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="b08c22e4-56a6-4827-8c41-cb80a10ac3b9" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="59adfa37-e843-4d6e-9c9d-ccf5743a8dbe" name="University Moddelling">
+    <elementDefinition Id="e47e4ba9-10ca-483e-b694-9b02435d535b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6cc8f978-710c-438e-b8d6-14b0c1813c01">
+        <profileInstance Id="14626166-9979-4fcd-8b31-9e56d44b3c5e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="18a9ebd7-04c5-4cf1-9283-596822f1e427">
+        <profileInstance Id="c13cedb5-e1f9-4603-b3b1-82ef1f2b6add" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

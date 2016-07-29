@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.125, 8.5" name="System Diagram">
+  <useCaseModelRootMoniker Id="7b478213-cc4d-41a6-b208-b7898be3c961" />
+  <nestedChildShapes>
+    <actorShape Id="acd9c403-2deb-4eae-ae6c-b0927a033dfd" absoluteBounds="5.625, 0.875, 0.5, 0.5" isReference="false" heightOffset="0.18800345897674561">
+      <actorMoniker Id="7c81f18d-5b3d-4e68-ae38-aea8d2065c48" LastKnownName="Power User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="bb413eb5-13c1-4caf-8ba2-2989fe05084c" absoluteBounds="5.375, 2.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f44dd34c-9836-424f-91b7-c6fae65a1802" LastKnownName="News Release Operation" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.875 : 1.375); (5.875 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="54908f6a-8145-411a-8d16-b879c26811be" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="acd9c403-2deb-4eae-ae6c-b0927a033dfd" />
+        <useCaseShapeMoniker Id="bb413eb5-13c1-4caf-8ba2-2989fe05084c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="99c18d78-1aaf-4943-b51f-e26c7478d5f5" absoluteBounds="1.75, 2.875, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f13c61a8-efb7-49b9-a21d-34b16d91a6dc" LastKnownName="Getting the News Operation" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.625 : 1.27155172413793); (2.64394352808693 : 3.01906758698352)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="2190b827-3e25-4713-acb0-f0b38911237b" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="acd9c403-2deb-4eae-ae6c-b0927a033dfd" />
+        <useCaseShapeMoniker Id="99c18d78-1aaf-4943-b51f-e26c7478d5f5" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="c95dc170-6cb8-463a-be5f-49b59a60b256" absoluteBounds="6.5, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e567c00d-7b71-42c6-b401-f2a1d33fc759" LastKnownName="Edit News" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(6.62629534065817 : 2.91609095970748); (6.30514576681709 : 3.05882410363685)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="29057574-e4c3-476b-9384-6c6783d97a26" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="c95dc170-6cb8-463a-be5f-49b59a60b256" />
+        <useCaseShapeMoniker Id="bb413eb5-13c1-4caf-8ba2-2989fe05084c" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="e1e2d089-a8fe-4cc1-9e16-b3af40a44298" absoluteBounds="0.5, 1.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="9a23f4eb-d2a1-4d59-976f-8b758820c2b2" LastKnownName="Get news staff" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(1.20690147215059 : 2.10259161936565); (1.96833158767925 : 2.94016474644717)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="72a76056-212f-415e-9abe-52fdffad9e01" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="e1e2d089-a8fe-4cc1-9e16-b3af40a44298" />
+        <useCaseShapeMoniker Id="99c18d78-1aaf-4943-b51f-e26c7478d5f5" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="ed89421f-82b4-4fca-853a-8eb056a65def" absoluteBounds="0.5, 2.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="39a4a2a1-2758-4afd-9a37-7357c1a2cfba" LastKnownName="Confirmed the news" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(1.49029033784546 : 3.17402903378455); (1.75438604965868 : 3.20043860496587)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="dec56b96-33c1-4992-98fa-e2c4b5dec005" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="ed89421f-82b4-4fca-853a-8eb056a65def" />
+        <useCaseShapeMoniker Id="99c18d78-1aaf-4943-b51f-e26c7478d5f5" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="0d8fa02c-f777-49f2-acf9-00b205ca7c47" absoluteBounds="4.125, 2.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ca05d24b-b41b-42c1-b79a-6ec2998386b6" LastKnownName="Submit News" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(5.08923834544263 : 3.09284766908853); (5.39188253019938 : 3.15337650603988)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="2bfacedb-65c2-45a6-8420-cc9f7e1573ae" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0d8fa02c-f777-49f2-acf9-00b205ca7c47" />
+        <useCaseShapeMoniker Id="bb413eb5-13c1-4caf-8ba2-2989fe05084c" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="ec208c94-7e30-4a2d-ade1-23eadbbfcbe7" absoluteBounds="6.25, 3.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="5600ad51-c525-478c-a7be-0ca41bb2891d" LastKnownName="Delete News" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(6.46326882781834 : 3.67019201987024); (6.23706896551724 : 3.50862068965517)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="a02c48d3-c58f-4463-8ae7-f73421d7f4aa" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="ec208c94-7e30-4a2d-ade1-23eadbbfcbe7" />
+        <useCaseShapeMoniker Id="bb413eb5-13c1-4caf-8ba2-2989fe05084c" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <useCaseShape Id="2e4e0127-5ac7-42bb-a757-f8e4c2410e15" absoluteBounds="5.5, 5.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="54bfc013-21c2-4456-82da-a29b72014410" LastKnownName="User Validation" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(2.25 : 3.625); (5.6930590862187 : 5.80265051593233)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="b2380c6b-c89b-4ef8-bd59-967a6a173743" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="99c18d78-1aaf-4943-b51f-e26c7478d5f5" />
+        <useCaseShapeMoniker Id="2e4e0127-5ac7-42bb-a757-f8e4c2410e15" />
+      </nodes>
+    </includeConnector>
+    <includeConnector edgePoints="[(5.875 : 3.625); (6 : 5.75)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="ceea3795-3cb5-4876-86da-97f892c96e88" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="bb413eb5-13c1-4caf-8ba2-2989fe05084c" />
+        <useCaseShapeMoniker Id="2e4e0127-5ac7-42bb-a757-f8e4c2410e15" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="4a9e5129-92b1-4bbd-b26d-a08fd4801dcd" absoluteBounds="8.125, 3.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fdff2550-08fd-4527-97fc-abf98986505e" LastKnownName="File Realeas Operation" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(6.125 : 1.34090909090909); (8.37448186472915 : 3.28364342862972)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="3a10b2ac-cd01-4a09-a1b6-da8c04e18973" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="acd9c403-2deb-4eae-ae6c-b0927a033dfd" />
+        <useCaseShapeMoniker Id="4a9e5129-92b1-4bbd-b26d-a08fd4801dcd" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <includeConnector edgePoints="[(8.32840048097508 : 3.70126395933834); (6.29659951902492 : 5.79873604066166)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="785df8f2-3d2e-4fe8-b828-06a8fb3abfaf" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="4a9e5129-92b1-4bbd-b26d-a08fd4801dcd" />
+        <useCaseShapeMoniker Id="2e4e0127-5ac7-42bb-a757-f8e4c2410e15" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="062a86b0-16b4-4793-9271-5c3e9d1232fe" absoluteBounds="9.875, 3.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="4d1ddedd-0c95-4793-9fd4-e4ad38d8b7e3" LastKnownName="Upload File" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseGeneralizationConnector edgePoints="[(9.875 : 3.5); (9.125 : 3.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="191eb720-928e-469a-825b-b7fa8d76bbbc" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="062a86b0-16b4-4793-9271-5c3e9d1232fe" />
+        <useCaseShapeMoniker Id="4a9e5129-92b1-4bbd-b26d-a08fd4801dcd" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <ellipseShape Id="b589e705-d63a-459c-89d5-e6799517a77d" absoluteBounds="5.75, 1, 0.25, 0.25" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+  </nestedChildShapes>
+</useCaseDiagram>

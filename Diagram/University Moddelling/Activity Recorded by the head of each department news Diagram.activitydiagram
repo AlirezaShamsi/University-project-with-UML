@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="3cc75f6c-43a3-46af-898e-5632eda2a056" name="Activity Recorded by the head of each department news Diagram" linkedPackageId="85940a50-12c6-4def-9612-de8d9fd901d5" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="647ed054-518d-4613-a7f0-d65d02235987" name="Activity Recorded by the head of each department news Diagram" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="391095c9-29a7-407f-aed5-3cd8ac448d11" />
+        <nodes>
+          <initialNode Id="3c3f0b6d-a117-45c0-aa99-9c706b13d908" name="Initial1" isLeaf="false">
+            <elementDefinition Id="66cc998f-6c61-4117-b353-29171aa82a61" />
+            <flowNodeTargets>
+              <controlFlow Id="65f0dd04-04c6-4bbd-817d-536244143516" isLeaf="false">
+                <opaqueActionMoniker Id="7be82c7a-8e8e-48c0-8510-875def8e3cb4" LastKnownName="Get news staff" />
+                <elementDefinition Id="2f5b56a8-9b81-4b1f-b815-5a976da36ef9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="1b1d708d-12d2-4df2-892d-8be391cadcba" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="5b2f8eeb-7040-4286-9afc-d278ea023fab" />
+          </activityFinalNode>
+          <opaqueAction Id="7be82c7a-8e8e-48c0-8510-875def8e3cb4" name="Get news staff" isLeaf="false">
+            <elementDefinition Id="9fd1c008-7909-477d-a9db-2f45707cfb60" />
+            <flowNodeTargets>
+              <controlFlow Id="2b6622d3-7046-44bf-b54c-8d9e5adc7319" isLeaf="false">
+                <decisionNodeMoniker Id="258eb289-6b1b-4ae8-82b1-afcf381cf440" LastKnownName="Decision1" />
+                <elementDefinition Id="7b6f1947-5103-42f5-a09c-56f263110162" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="afd9ab8c-f3f0-4253-806b-2db968c3c351" name="News Release" isLeaf="false">
+            <elementDefinition Id="e148ba2d-ec4c-4e55-8974-a4a57fa845df" />
+            <flowNodeTargets>
+              <controlFlow Id="c770b078-8ae7-45b3-92cf-00d5d890644a" isLeaf="false">
+                <decisionNodeMoniker Id="18f19d42-71dd-49b8-a529-993c24537f54" LastKnownName="Decision2" />
+                <elementDefinition Id="c1523dec-aec9-4b6f-a2c9-07f690dbcbe3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c157e9f8-03fd-48eb-a9fa-dcb68b3bf3de" name="Make a copy for archive" isLeaf="false">
+            <elementDefinition Id="12d31771-74f7-492f-834a-caf670c02bbf" />
+            <flowNodeTargets>
+              <controlFlow Id="3e8fa0e0-5159-44a6-a453-fed29d4320a8" isLeaf="false">
+                <opaqueActionMoniker Id="afd9ab8c-f3f0-4253-806b-2db968c3c351" LastKnownName="News Release" />
+                <elementDefinition Id="8ba3a945-e33e-4fc1-ac1e-1ccac9154bfc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4faf85ab-14e1-47ea-b1f9-92aeceebd00d" name="Completion" isLeaf="false">
+            <elementDefinition Id="77cbfaa9-6f2b-48f8-9ce2-3def2c3101bf" />
+            <flowNodeTargets>
+              <controlFlow Id="b6d953de-df7e-42e5-a145-f668fdf45ceb" isLeaf="false">
+                <activityFinalNodeMoniker Id="1b1d708d-12d2-4df2-892d-8be391cadcba" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9e4f0467-96a7-4252-9828-7814b4a82df4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="433a3d13-c692-491f-affc-1cb4918f5650" name="Delete News" isLeaf="false">
+            <elementDefinition Id="6abf3816-8976-4033-ab0d-12aa3bace0b2" />
+            <flowNodeTargets>
+              <controlFlow Id="52ce3a50-3058-4e40-a21a-9ff9e10a7046" isLeaf="false">
+                <opaqueActionMoniker Id="4faf85ab-14e1-47ea-b1f9-92aeceebd00d" LastKnownName="Completion" />
+                <elementDefinition Id="d6618d7d-3b01-4373-a2e2-9f53e000c9d1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fdc6d016-104a-4d4c-ba40-b55c2b193a12" name="Edit News" isLeaf="false">
+            <elementDefinition Id="257cfea7-3a39-4fe4-87d9-9620e60e78c4" />
+            <flowNodeTargets>
+              <controlFlow Id="9584e4ad-44cb-4805-b9fb-834f786f90b0" isLeaf="false">
+                <opaqueActionMoniker Id="4faf85ab-14e1-47ea-b1f9-92aeceebd00d" LastKnownName="Completion" />
+                <elementDefinition Id="95911bd6-a6d0-4c4b-81db-516c07b1c8c5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="258eb289-6b1b-4ae8-82b1-afcf381cf440" name="Decision1" isLeaf="false">
+            <elementDefinition Id="30cd5ce3-6492-46df-93a7-a9e0c187742a" />
+            <flowNodeTargets>
+              <controlFlow Id="d807241a-c558-4515-8e67-ecf1cfbaa6d7" isLeaf="false">
+                <opaqueActionMoniker Id="c157e9f8-03fd-48eb-a9fa-dcb68b3bf3de" LastKnownName="Make a copy for archive" />
+                <elementDefinition Id="1789f528-81ca-49e7-8a91-612569311b78" />
+              </controlFlow>
+              <controlFlow Id="dad61a5f-a295-4da6-92dd-caa75ff3f097" isLeaf="false">
+                <opaqueActionMoniker Id="4faf85ab-14e1-47ea-b1f9-92aeceebd00d" LastKnownName="Completion" />
+                <elementDefinition Id="454eeee4-0c3e-4244-8fd4-f1432c370180" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="18f19d42-71dd-49b8-a529-993c24537f54" name="Decision2" isLeaf="false">
+            <elementDefinition Id="3608ee40-2a73-44a6-90aa-f9cd5a11baf0" />
+            <flowNodeTargets>
+              <controlFlow Id="cd77dbf7-feb9-4230-9c2a-b4f828de1d60" isLeaf="false">
+                <opaqueActionMoniker Id="433a3d13-c692-491f-affc-1cb4918f5650" LastKnownName="Delete News" />
+                <elementDefinition Id="ab7dd148-e704-481b-9df8-dbbafbe96dd7" />
+              </controlFlow>
+              <controlFlow Id="03031682-6691-453b-b74f-57edae79b507" isLeaf="false">
+                <opaqueActionMoniker Id="fdc6d016-104a-4d4c-ba40-b55c2b193a12" LastKnownName="Edit News" />
+                <elementDefinition Id="77f8a094-2222-4c64-85a5-be91532fd2f2" />
+              </controlFlow>
+              <controlFlow Id="80f72f59-aca3-42f7-b3b8-052253624cd0" isLeaf="false">
+                <opaqueActionMoniker Id="4faf85ab-14e1-47ea-b1f9-92aeceebd00d" LastKnownName="Completion" />
+                <elementDefinition Id="836fce91-b01e-44de-93ef-b253560436d1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="85940a50-12c6-4def-9612-de8d9fd901d5" name="University Moddelling">
+    <elementDefinition Id="e47e4ba9-10ca-483e-b694-9b02435d535b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b60ef8f7-c15f-47df-9024-623f27f8c138">
+        <profileInstance Id="b18b45b0-62ff-4da8-81c1-91b9976e6342" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="feb2ecf5-5960-44f2-acb9-67000993b603">
+        <profileInstance Id="a63889d7-9e31-41e0-a378-7700fe992ff8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

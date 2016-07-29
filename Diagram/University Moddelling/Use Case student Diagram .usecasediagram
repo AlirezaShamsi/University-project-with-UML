@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="68c6a33c-6e43-4c58-809c-fe473ff65b2c" name="student applications Chart " linkedPackageId="c97a2824-709e-4bf8-b92d-1cdbbe575187" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="145032ed-8971-4e0a-8c17-2334e4f9d944" name="Student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="19dd5e05-aaf9-415b-8d03-43f15e592b83" />
+        <targetEnds>
+          <association Id="e0abed26-1c96-4ca6-866c-ccffac0744ee" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Visit the news Operation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f9806cef-e559-4ba3-af63-462ac550a001" LastKnownName="Visit the news Operation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66934f19-8f05-4dc0-8bcb-2e5fb3a1f64e" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7361d051-47ac-42bb-a1c2-3c563dc5f0d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85ec1dbd-d955-4a1f-82d3-30111369346b" name="Visit the news Operation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8145aad0-55ef-43c7-8747-d39228ed723a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7968095c-4878-4891-9160-884e226cb744" />
+          </association>
+          <association Id="5c7f9d50-0bb5-45c4-829c-2c551606bbc2" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Visit the Download Operation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5ede6aaf-6ce7-48f6-81d0-aef140cca086" LastKnownName="Visit the Download Operation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="073d7c1a-a06b-46c9-a7b1-ff3cee1cd6cb" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2164a9cb-de1b-4f9c-a4a6-c82fe52baae9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f8d6c7d-1e3c-4e43-8959-d46c6ec7198e" name="Visit the Download Operation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8ed68585-dcdc-4733-b92b-ea0c43db64f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7103e7d7-4d90-40f2-867f-a4aa3b647d9a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fe32e1aa-3e34-4f80-948f-62896cf5de24" name="Search News" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5f63dcd-02b3-4498-ab42-cd1303d27fc6" />
+        <generalsInternal>
+          <generalization Id="085bd2ed-6573-4d4a-b41e-3da8015a6bef" isSubstitutable="false">
+            <useCaseMoniker Id="f9806cef-e559-4ba3-af63-462ac550a001" LastKnownName="Visit the news Operation" />
+            <elementDefinition Id="ffb4a640-4610-4f62-877a-d3c1b7752e05" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be28c46e-4f46-41ed-abf5-83c1c0470b96" name="Submit comment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e1c1c2b-a5c4-440f-930e-a800c583c8fa" />
+        <extendedCases>
+          <extend Id="2e4a9be2-535f-412c-b3cc-41c3c1e91c88">
+            <useCaseMoniker Id="f9806cef-e559-4ba3-af63-462ac550a001" LastKnownName="Visit the news Operation" />
+            <elementDefinition Id="d49e2d4f-2679-4f3d-802d-81b4cbc2f9bc" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b184beb3-6737-484b-a01e-0b25e0b38388" name="Display News" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e43bffac-33be-4bab-b42f-32b3cd7f1b37" />
+        <extendedCases>
+          <extend Id="72ab1433-a890-43f1-a484-191ed037279d">
+            <useCaseMoniker Id="f9806cef-e559-4ba3-af63-462ac550a001" LastKnownName="Visit the news Operation" />
+            <elementDefinition Id="3848393f-8e33-4624-9980-a3f27b22410e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f9806cef-e559-4ba3-af63-462ac550a001" name="Visit the news Operation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="524d814d-c9cc-4fc3-93b4-861678ba7f24" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9f31684c-9c58-47cf-a9fd-e7662bb13e63" name="Download File" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="49e76e8b-44ef-4d68-b2a1-3bc6b1b92674" />
+        <extendedCases>
+          <extend Id="aabdbb05-c5ea-4534-b173-87a33771ed0c">
+            <useCaseMoniker Id="5ede6aaf-6ce7-48f6-81d0-aef140cca086" LastKnownName="Visit the Download Operation" />
+            <elementDefinition Id="37f73647-afb0-4820-be2e-32dda210a996" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5ede6aaf-6ce7-48f6-81d0-aef140cca086" name="Visit the Download Operation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b02d1f7d-9460-4e67-b9fb-ed74c485d208" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="c97a2824-709e-4bf8-b92d-1cdbbe575187" name="University Moddelling">
+    <elementDefinition Id="e47e4ba9-10ca-483e-b694-9b02435d535b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="da3b51f0-1264-4eff-a08f-491bdd6db920">
+        <profileInstance Id="8a9a8bae-6108-46f0-b113-57c13d480a77" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="76fe80fb-8d40-4886-87c3-057f1f3367b0">
+        <profileInstance Id="7dacda69-8f0f-43f1-b4f0-7a9260a1a89e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f2e88f7e-c503-462f-80bd-3518d132ec96}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>University Moddelling</Name>
+    <RootNamespace>University Moddelling</RootNamespace>
+    <ValidateArchitecture>
+    </ValidateArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Use Case System Diagram.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case System Diagram.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case System Diagram.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Case Relationship between agents.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Relationship between agents.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Relationship between agents.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Case student Diagram .usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case student Diagram .usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case student Diagram .usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Case Each Sector Diagram .usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Case Each Sector Diagram .usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Case Each Sector Diagram .usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Activity Recorded by the head of each department news Diagram.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity Recorded by the head of each department news Diagram.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity Recorded by the head of each department news Diagram.activitydiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\University Moddelling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

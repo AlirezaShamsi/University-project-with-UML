@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Relationship between agents">
+  <useCaseModelRootMoniker Id="6c249eed-6cd2-40f5-805e-e6d9f4b376db" />
+  <nestedChildShapes>
+    <actorShape Id="18c17341-9e34-4408-880a-989d44f3f569" absoluteBounds="3.375, 0.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="2ae219f1-e110-4fed-ba8c-4018e2ccb8fe" LastKnownName="User" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="c70bb672-5112-49cf-bdd8-4488b53faf59" absoluteBounds="1.625, 2.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="045e635d-d060-486a-81fa-74a2839ec861" LastKnownName="Student" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(2.10833333333333 : 2.625); (3.39166666666667 : 1.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="bd2b035a-acb0-4a17-9cfe-de8e02ec682c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c70bb672-5112-49cf-bdd8-4488b53faf59" />
+        <actorShapeMoniker Id="18c17341-9e34-4408-880a-989d44f3f569" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="1aca8361-eda9-4685-b4cf-180208426835" absoluteBounds="3.375, 3.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="6ee9750a-0a74-4d4a-b236-a84cb5a340d5" LastKnownName="Web Admin" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(3.62349253161176 : 3.125); (3.61218651869997 : 1.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="79f2acae-3f0e-4f87-a448-512299cc810c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1aca8361-eda9-4685-b4cf-180208426835" />
+        <actorShapeMoniker Id="18c17341-9e34-4408-880a-989d44f3f569" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="b5c45ef0-bc71-412e-b9a2-817981ebf202" absoluteBounds="5.125, 2.625, 0.5, 0.5" isReference="false" heightOffset="0.18800345897674561">
+      <actorMoniker Id="28bc31be-493d-49ce-a048-aeb73c4d0e7e" LastKnownName="Power User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(5.14166666666667 : 2.625); (3.85833333333333 : 1.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="48b75720-4b5b-4c5a-b5cc-988ba903ca46" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="b5c45ef0-bc71-412e-b9a2-817981ebf202" />
+        <actorShapeMoniker Id="18c17341-9e34-4408-880a-989d44f3f569" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="8ab4ad58-9b5c-41a2-9c9f-925a3511778a" absoluteBounds="5.875, 0.875, 0.5, 0.5" isReference="false" heightOffset="0.18800345897674561">
+      <actorMoniker Id="7f947ecf-4026-4b82-b875-e7e55bbb8b35" LastKnownName="Authentication system" />
+      <relativeChildShapes />
+    </actorShape>
+    <ellipseShape Id="d8815ada-c828-4f50-834f-9ca10bd045ad" absoluteBounds="5.5, 0.75, 1.125, 1.375" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+    <ellipseShape Id="8bf67d2a-ef18-4d8b-be96-e5785ed63a2a" absoluteBounds="5.25, 2.75, 0.25, 0.25" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+  </nestedChildShapes>
+</useCaseDiagram>

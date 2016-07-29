@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="e47e4ba9-10ca-483e-b694-9b02435d535b"
+  name="University Moddelling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="7d85b78b-3a3e-410d-9400-4f6e88f0ed47"
+        name="User"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="19dd5e05-aaf9-415b-8d03-43f15e592b83"
+        name="Student"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="a7c5807d-b20d-4818-bcea-5b0c1ca6d318"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="7d85b78b-3a3e-410d-9400-4f6e88f0ed47"
+              LastKnownName="User"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="7968095c-4878-4891-9160-884e226cb744"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="Visit the news Operation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="524d814d-c9cc-4fc3-93b4-861678ba7f24"
+              LastKnownName="Visit the news Operation"
+              LastKnownLocation="University Moddelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7361d051-47ac-42bb-a1c2-3c563dc5f0d7"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8145aad0-55ef-43c7-8747-d39228ed723a"
+                  name="Visit the news Operation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7103e7d7-4d90-40f2-867f-a4aa3b647d9a"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="Visit the Download Operation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b02d1f7d-9460-4e67-b9fb-ed74c485d208"
+              LastKnownName="Visit the Download Operation"
+              LastKnownLocation="University Moddelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2164a9cb-de1b-4f9c-a4a6-c82fe52baae9"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ed68585-dcdc-4733-b92b-ea0c43db64f7"
+                  name="Visit the Download Operation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="74d63907-8600-4af5-8c73-ca6a78065cc3"
+        name="Web Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="a4513a64-dd12-4153-b8a3-ee4a6a4eef85"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="7d85b78b-3a3e-410d-9400-4f6e88f0ed47"
+              LastKnownName="User"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="9470cddd-9ae2-43d1-9d7c-65e1778dcfbf"
+            isDerived="false"
+            sourceEndRoleName="Web Admin"
+            targetEndRoleName="UseCase2"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bb1e9847-fe60-487e-ae50-30daaad50b07"
+              LastKnownName="User Management"
+              LastKnownLocation="University Moddelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2b32054-cd29-4cdd-93ad-ffda907c7687"
+                  name="Web Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f13173bf-0b42-462a-a8c3-0120e01ac60d"
+                  name="UseCase2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="51829976-7ad7-4f3e-ba2d-58b043cc4914"
+            isDerived="false"
+            sourceEndRoleName="Web Admin"
+            targetEndRoleName="Category Management"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="77e5c929-287f-4835-aa2a-1c619567d66f"
+              LastKnownName="Category Management"
+              LastKnownLocation="University Moddelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="26400de1-fd88-41df-9e33-1b0ccf690392"
+                  name="Web Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2bad2dfe-3291-49f3-ba9f-6ad18cb089d8"
+                  name="Category Management"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="93d5faa0-b1a3-42c7-bd61-98799e5a3ca1"
+        name="Power User"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1a2725a4-b779-4044-a572-60ac3eb63ec1"
+            name="specification"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="85dbe571-01c7-40e9-b2a3-e01f6932e1a2"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="7d85b78b-3a3e-410d-9400-4f6e88f0ed47"
+              LastKnownName="User"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="47bca3ac-a2d7-439d-8e8e-c906f88756f0"
+            isDerived="false"
+            sourceEndRoleName="Head of department"
+            targetEndRoleName="Getting the News Operation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="db68d3f8-a7f8-4de4-9a52-024f8ad98904"
+              LastKnownName="Getting the News Operation"
+              LastKnownLocation="University Moddelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c3088270-2ff5-4bb3-a233-2659a001b9d4"
+                  name="Head of department"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0786f81d-b2d0-42ec-acfe-014cc6867fed"
+                  name="Getting the News Operation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ffe608a1-3fc4-45a8-919c-9ddddc974ca0"
+            isDerived="false"
+            sourceEndRoleName="Head of department"
+            targetEndRoleName="News Release Operation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d51ea413-2a7e-4eba-bfe3-984c7eedc46f"
+              LastKnownName="News Release Operation"
+              LastKnownLocation="University Moddelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a0f79781-4638-42b0-8865-87c04f0e27b6"
+                  name="Head of department"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53400972-1e50-41d0-9937-a40108451524"
+                  name="News Release Operation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="919f2d9f-d373-4991-a8a4-805153d0a968"
+            isDerived="false"
+            sourceEndRoleName="Power User"
+            targetEndRoleName="File Realeas Operation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="64ceec60-8583-4612-879c-7b3a6e0e9ffa"
+              LastKnownName="File Realeas Operation"
+              LastKnownLocation="University Moddelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7d623df-5082-4e47-b12d-e3016a888821"
+                  name="Power User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aad6a38d-9a08-4d93-b397-3ee31f96222f"
+                  name="File Realeas Operation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="156dc940-7d83-4dd5-8c3b-a23dcbcd36c8"
+        name="Authentication system"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c5f63dcd-02b3-4498-ab42-cd1303d27fc6"
+        name="Search News"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="ffb4a640-4610-4f62-877a-d3c1b7752e05"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="524d814d-c9cc-4fc3-93b4-861678ba7f24"
+              LastKnownName="Visit the news Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7e1c1c2b-a5c4-440f-930e-a800c583c8fa"
+        name="Submit comment"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d49e2d4f-2679-4f3d-802d-81b4cbc2f9bc">
+            <useCaseMoniker
+              Id="524d814d-c9cc-4fc3-93b4-861678ba7f24"
+              LastKnownName="Visit the news Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e43bffac-33be-4bab-b42f-32b3cd7f1b37"
+        name="Display News"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="3848393f-8e33-4624-9980-a3f27b22410e">
+            <useCaseMoniker
+              Id="524d814d-c9cc-4fc3-93b4-861678ba7f24"
+              LastKnownName="Visit the news Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="524d814d-c9cc-4fc3-93b4-861678ba7f24"
+        name="Visit the news Operation"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b08c22e4-56a6-4827-8c41-cb80a10ac3b9"
+        name="Authentication system"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="43aa5452-51a8-480e-ad00-8f1ff4b62419"
+            name="realization"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="2e0537e4-e2b7-4801-8946-adfe45c64704"
+            isDerived="false"
+            sourceEndRoleName="Authentication system"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8935a382-c758-4796-b80f-471364f1c364"
+              LastKnownName="User Validation"
+              LastKnownLocation="University Moddelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2df67890-7ae3-45e7-8ff9-e0d4a5e17a71"
+                  name="Authentication system"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31658a42-d8f4-4ee2-b6ff-b7078201fcb0"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8935a382-c758-4796-b80f-471364f1c364"
+        name="User Validation"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bb1e9847-fe60-487e-ae50-30daaad50b07"
+        name="User Management"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="8a387caa-ca33-4d67-a582-16e1e63a48be">
+            <useCaseMoniker
+              Id="8935a382-c758-4796-b80f-471364f1c364"
+              LastKnownName="User Validation"
+              LastKnownLocation="University Moddelling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="28687733-89d0-4360-a28e-e8f3fd1e5348"
+        name="Delete User"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="b1e7d49b-ad24-4064-85ae-266b61841ca8"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="bb1e9847-fe60-487e-ae50-30daaad50b07"
+              LastKnownName="User Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="728a831e-ea9a-4215-bec2-2f6c26ed0664"
+        name="Create an access level"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="15e2a057-b092-4295-92fc-531a5e0fe5c8"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="bb1e9847-fe60-487e-ae50-30daaad50b07"
+              LastKnownName="User Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d0abb846-9f0a-4559-b1a8-6550eea3eca8"
+        name="Edit User"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="0f36a437-797f-4e39-bf58-364596af3579"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="bb1e9847-fe60-487e-ae50-30daaad50b07"
+              LastKnownName="User Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="068e86db-685f-4fc7-be7b-3ab77dba8fa7"
+        name="User List"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="bbd540e8-1cc1-4cf6-a91b-83013640c303"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="bb1e9847-fe60-487e-ae50-30daaad50b07"
+              LastKnownName="User Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="25171f3c-de08-4754-bb9b-0bae97520e15"
+        name="Creat New User"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="e6c9a807-169b-4634-90a2-64384607e10f"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="bb1e9847-fe60-487e-ae50-30daaad50b07"
+              LastKnownName="User Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d51ea413-2a7e-4eba-bfe3-984c7eedc46f"
+        name="News Release Operation"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="84bc2462-6522-47f9-87c2-430c347e03b0">
+            <useCaseMoniker
+              Id="8935a382-c758-4796-b80f-471364f1c364"
+              LastKnownName="User Validation"
+              LastKnownLocation="University Moddelling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="db68d3f8-a7f8-4de4-9a52-024f8ad98904"
+        name="Getting the News Operation"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="de26b587-a139-4588-8740-db84ce561042">
+            <useCaseMoniker
+              Id="8935a382-c758-4796-b80f-471364f1c364"
+              LastKnownName="User Validation"
+              LastKnownLocation="University Moddelling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9331a50-279c-4f10-9dfd-84b79d05d5f2"
+        name="Edit News"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="8ad33dcf-8964-43db-9d35-a097021cb849"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="d51ea413-2a7e-4eba-bfe3-984c7eedc46f"
+              LastKnownName="News Release Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6aaa9196-9451-441e-b420-8d3e33e69163"
+        name="Get news staff"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d54147e6-596a-46f1-b188-34b06400449e"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="db68d3f8-a7f8-4de4-9a52-024f8ad98904"
+              LastKnownName="Getting the News Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e4b5483c-39f2-41e0-aa1e-5ec98f642894"
+        name="Confirmed the news"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="6de3d305-29df-406e-b626-735656ff6bb9"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="db68d3f8-a7f8-4de4-9a52-024f8ad98904"
+              LastKnownName="Getting the News Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aaf4524b-ba23-44c7-936f-4269fd0a4877"
+        name="Submit News"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="4f0777eb-6cc2-4344-b300-74ac23031f7b"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="d51ea413-2a7e-4eba-bfe3-984c7eedc46f"
+              LastKnownName="News Release Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="215aaa1b-4ccf-430d-b4cb-e1643bd97b7a"
+        name="Delete News"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="e9dc0d68-a737-4511-bb88-b66718001eb1"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="d51ea413-2a7e-4eba-bfe3-984c7eedc46f"
+              LastKnownName="News Release Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="391095c9-29a7-407f-aed5-3cd8ac448d11"
+        name="Activity Recorded by the head of each department news Diagram"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="66cc998f-6c61-4117-b353-29171aa82a61"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2f5b56a8-9b81-4b1f-b815-5a976da36ef9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9fd1c008-7909-477d-a9db-2f45707cfb60"
+                  LastKnownName="Get news staff"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="5b2f8eeb-7040-4286-9afc-d278ea023fab"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="9fd1c008-7909-477d-a9db-2f45707cfb60"
+            name="Get news staff"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7b6f1947-5103-42f5-a09c-56f263110162"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="30cd5ce3-6492-46df-93a7-a9e0c187742a"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e148ba2d-ec4c-4e55-8974-a4a57fa845df"
+            name="News Release"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c1523dec-aec9-4b6f-a2c9-07f690dbcbe3"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="3608ee40-2a73-44a6-90aa-f9cd5a11baf0"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="12d31771-74f7-492f-834a-caf670c02bbf"
+            name="Make a copy for archive"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8ba3a945-e33e-4fc1-ac1e-1ccac9154bfc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e148ba2d-ec4c-4e55-8974-a4a57fa845df"
+                  LastKnownName="News Release"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="77cbfaa9-6f2b-48f8-9ce2-3def2c3101bf"
+            name="Completion"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9e4f0467-96a7-4252-9828-7814b4a82df4"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="5b2f8eeb-7040-4286-9afc-d278ea023fab"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6abf3816-8976-4033-ab0d-12aa3bace0b2"
+            name="Delete News"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d6618d7d-3b01-4373-a2e2-9f53e000c9d1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="77cbfaa9-6f2b-48f8-9ce2-3def2c3101bf"
+                  LastKnownName="Completion"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="257cfea7-3a39-4fe4-87d9-9620e60e78c4"
+            name="Edit News"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="95911bd6-a6d0-4c4b-81db-516c07b1c8c5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="77cbfaa9-6f2b-48f8-9ce2-3def2c3101bf"
+                  LastKnownName="Completion"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="30cd5ce3-6492-46df-93a7-a9e0c187742a"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1789f528-81ca-49e7-8a91-612569311b78"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="12d31771-74f7-492f-834a-caf670c02bbf"
+                  LastKnownName="Make a copy for archive"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="454eeee4-0c3e-4244-8fd4-f1432c370180"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="77cbfaa9-6f2b-48f8-9ce2-3def2c3101bf"
+                  LastKnownName="Completion"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="3608ee40-2a73-44a6-90aa-f9cd5a11baf0"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ab7dd148-e704-481b-9df8-dbbafbe96dd7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6abf3816-8976-4033-ab0d-12aa3bace0b2"
+                  LastKnownName="Delete News"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="77f8a094-2222-4c64-85a5-be91532fd2f2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="257cfea7-3a39-4fe4-87d9-9620e60e78c4"
+                  LastKnownName="Edit News"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="836fce91-b01e-44de-93ef-b253560436d1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="77cbfaa9-6f2b-48f8-9ce2-3def2c3101bf"
+                  LastKnownName="Completion"
+                  LastKnownLocation="University Moddelling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="49e76e8b-44ef-4d68-b2a1-3bc6b1b92674"
+        name="Download File"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="37f73647-afb0-4820-be2e-32dda210a996">
+            <useCaseMoniker
+              Id="b02d1f7d-9460-4e67-b9fb-ed74c485d208"
+              LastKnownName="Visit the Download Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b02d1f7d-9460-4e67-b9fb-ed74c485d208"
+        name="Visit the Download Operation"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="77e5c929-287f-4835-aa2a-1c619567d66f"
+        name="Category Management"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="86475c52-faed-48ef-87b3-9bf14ca8241a"
+        name="Delet Category"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="b9d9a535-e764-4f1d-8d55-60b9af3108f1"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="77e5c929-287f-4835-aa2a-1c619567d66f"
+              LastKnownName="Category Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b1de3553-a469-46f6-afeb-6df51266d2d4"
+        name="Edit Category "
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="da57e986-abbb-437e-863a-ca7f000d86fb"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="77e5c929-287f-4835-aa2a-1c619567d66f"
+              LastKnownName="Category Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fd6db4e3-7b5a-44f0-a246-11f1c78f7e7c"
+        name="Category List"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="b3da9d2a-5c3c-4d75-a056-5b71cc16f6d6"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="77e5c929-287f-4835-aa2a-1c619567d66f"
+              LastKnownName="Category Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="105bd88d-2f36-4126-a666-3a7af1e1f15b"
+        name="Add Category"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="5cff7855-816a-449a-a8e5-5051cc0a8543"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="77e5c929-287f-4835-aa2a-1c619567d66f"
+              LastKnownName="Category Management"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="64ceec60-8583-4612-879c-7b3a6e0e9ffa"
+        name="File Realeas Operation"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="8e3f542f-4385-4636-8f09-928d73e110f3">
+            <useCaseMoniker
+              Id="8935a382-c758-4796-b80f-471364f1c364"
+              LastKnownName="User Validation"
+              LastKnownLocation="University Moddelling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="85ea486d-47f5-466d-b092-199fdd1be027"
+        name="Upload File"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="e8c5b215-62eb-4e0c-8888-ce728a50e223"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="64ceec60-8583-4612-879c-7b3a6e0e9ffa"
+              LastKnownName="File Realeas Operation"
+              LastKnownLocation="University Moddelling.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
