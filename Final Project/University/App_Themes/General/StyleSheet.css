@@ -1,0 +1,399 @@
+﻿.body
+{
+    align-items:center;
+}
+.header
+{
+	width:990px; height:315px; background: url(../../Images/Header.jpg) no-repeat; float:left;
+}
+.main
+{
+	width:990px; background: url(../../Images/Line.jpg) repeat-y;
+}
+div.main
+{
+	width:990px; float:left;
+}
+div.content
+{
+	width:677px; float:left; height:auto;
+}
+.contentPost
+{
+	width:675px;  float:left; background: url(../../Images/bodyPost.jpg) repeat-y;
+}
+.contentHeader
+{
+	width:675px; height:119px; float:left; background: url(../../Images/headerPost.jpg) no-repeat; text-align:right; direction:rtl;
+}
+
+
+.contentHeaderLeft
+{
+	width:50px; height:90px; float:left;
+}
+.contentHeaderCenter
+{
+	width:490px; float:left; padding-top:25px;
+}
+.contentSubHeader
+{
+	width:480px; float:left; direction:rtl; text-align:right; padding-top:35px;
+}
+.contentMain
+{
+	width:675px; float:left; background: url(../../Images/bodyPost.jpg) repeat-y ; text-align:right; direction:rtl;
+}
+.contentMainLeft
+{
+	width:45px; height:25px; float:left;
+}
+.contentMainCenter
+{
+	width:600px; float:left;
+}
+.contentMainFooter
+{
+	width:677px; height:110px; float:left; background: url(../../Images/footerPost.jpg) no-repeat;
+}
+.contentMainFooterHeader
+{
+	width:610px; padding-top:30px; float:left; text-align:right; direction:rtl;
+}
+.contentMainFooterLeft
+{
+	width:100px; float:left; padding-top:30px; text-align:right; direction:rtl;
+}
+.menu
+{
+	width:313px; height:176px; float:left; background: url(../../Images/headerMenu.jpg) no-repeat;
+}
+.menu_header
+{
+	width:220px; float:left; padding-top:75px; text-align:right;
+}
+.menu_center
+{
+	width:313px; float:left; background: url(../../Images/bodyMenu.jpg) repeat-y;
+}
+.menu_center_center
+{
+	padding:0px 40px 0px 40px; float:left; text-align:right; direction:rtl;
+}
+.menu_footer
+{
+	width:313px; height:75px; float:left; background: url(../../Images/footerMenu.jpg) no-repeat; line-height:0px;
+}
+.script
+{
+	width:313px; float:left;
+}
+.footer
+{
+	width:990px; height:183px; background: url(../../Images/Footer.jpg) no-repeat;
+}
+.footer_left
+{
+	width:393px; height:70px; float:left;
+}
+.footer_center
+{
+	width:265px; float:left; padding-top:90px;
+}
+
+.subHeader
+{
+    width:990px; height:42px; background: url(../../Images/Line.jpg) ; margin:0px; padding:0px;
+}
+
+
+body, input, textarea, select
+{
+	direction: ltr;
+	text-align: left;
+
+	font-size: 10pt;
+	font-family: Verdana;
+    margin-right: 0px;
+}
+
+div#main
+{
+	min-height: 200px;
+}
+
+div#header, div#footer
+{
+	height: 80px;
+	background-color: #3366FF;
+}
+
+div#subHeader, div#subFooter
+{
+	height: 24px;
+	padding: 3px 3px 2px 3px;
+	background-color: #CCCCCC;
+}
+
+.ltr
+{
+	direction: ltr;
+	text-align: left;
+
+	font-size: 10pt;
+	font-family: Verdana;
+}
+
+.rtl
+{
+	direction: rtl;
+	text-align: justify;
+
+	font-size: 10pt;
+	font-family: Tahoma;
+}
+
+a img
+{
+	border: 0px;
+}
+
+div.pageMessages
+{
+	margin: 2px;
+	padding: 2px;
+	margin: 4px 2px 4px 2px;
+	border: 1px outset Gray;
+	background-color: Yellow;
+}
+
+div.error
+{
+	color: Red;
+}
+
+div.warning
+{
+	color: Red;
+}
+
+div.information
+{
+	color: Blue;
+}
+
+fieldset
+{
+	margin: 2px;
+	padding: 2px;
+}
+
+legend
+{
+}
+
+div.validationSummary
+{
+	color: Red;
+	margin: 2px;
+	padding: 2px;
+}
+
+div.field
+{
+	margin: 2px;
+	padding: 2px;
+}
+
+div.buttons
+{
+	margin: 2px;
+	padding: 2px;
+}
+
+div.caption
+{
+	margin: 2px;
+	padding: 2px;
+}
+
+div.controls
+{
+	margin: 2px;
+	padding: 2px;
+}
+
+span.label
+{
+	color: Blue;
+}
+
+.lable
+{
+    font-family: Georgia;
+}
+
+.controls
+ {
+    font-family: Georgia;
+}
+
+.validator
+{
+	color: Red;
+}
+
+input.button
+{
+	color: Black;
+	border: 1px dotted Gray;
+	background-color: #CCCCFF;
+}
+
+input.checkBox
+{
+	color: Black;
+	background-color: transparent;
+}
+
+input.textBox
+{
+	color: Black;
+	background-color: transparent;
+
+	border-top: 1px solid Black;
+	border-left: 1px solid Black;
+	border-right: 1px solid Black;
+	border-bottom: 1px solid Black;
+}
+
+input.username
+{
+	color: Black;
+	background-color: transparent;
+
+	border-top: 1px solid Black;
+	border-left: 1px solid Black;
+	border-right: 1px solid Black;
+	border-bottom: 1px solid Black;
+
+	padding-left: 16px;
+
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left center;
+	background-image: url(../Images/Username.png);
+}
+
+input.password
+{
+	color: Black;
+	background-color: transparent;
+
+	border-top: 1px solid Black;
+	border-left: 1px solid Black;
+	border-right: 1px solid Black;
+	border-bottom: 1px solid Black;
+
+	padding-left: 16px;
+
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left center;
+	background-image: url(../Images/Password.png);
+}
+
+select.listBox
+{
+}
+
+select.dropDownList
+{
+}
+
+a:link
+{
+	color: Blue;
+	text-decoration: none;
+
+	padding-bottom: 1px;
+	border-bottom: 1px solid Blue;
+}
+
+a:visited
+{
+	color: Blue;
+	text-decoration: none;
+
+	padding-bottom: 1px;
+	border-bottom: 1px solid Blue;
+}
+
+a:hover
+{
+	color: Red;
+	text-decoration: none;
+
+	padding-bottom: 1px;
+	border-bottom: 0px solid Blue;
+}
+
+a:active
+{
+	color: Red;
+	text-decoration: none;
+
+	padding-bottom: 1px;
+	border-bottom: 1px solid Red;
+}
+
+/*Text*/
+body{background-color:lightblue; margin:0 0 0 0; font-family:Tahoma;
+    text-align: center;
+}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.text1{font-size:8pt; color:#222222;}
+.text1 a{font-size:8pt; color:#222222; text-decoration:none;}
+.text1 a:hover{font-size:8pt; color:#8e340b; text-decoration:none;}
+.text2{font-size:8pt; color:#fceaac;}
+.text2 a{font-size:8pt; color:#fceaac;}
+.text3{font-size:9pt; color:#2d4656;}
+.text3 a{font-size:9pt; color:#2d4656;}
+.text4{font-size:8pt; color:#2d2d2d;}
+.text4 a{font-size:8pt; color:#2d2d2d;}
+.text5{font-size:9pt; color:#b23c13; font-weight:bold;}
+.text6{font-size:10pt; color:#b23c13; font-weight:bold;}
+.text6 a{font-size:10pt; color:#b23c13; font-weight:bold;}
+.text7{font-size:8pt; color:#2d2d2d;}
+.text7 a{font-size:8pt; color:#2d2d2d;}
+.text8{font-size:8pt; color:#222222;}
+.text8 a{font-size:8pt; color:#222222;}
+.text9{font-size:8pt; color:#d8d8d8;}
+.text9 a{font-size:8pt; color:#d8d8d8;}
+.text15{font-size:large; color:Black;}
+ul{padding:0px; margin:0px;}
+/*End Text*/
+
+.style130
+        {
+            width: 550px;
+            border: 1px solid #CC6600;
+            background-color: #99FF66;
+        }
+.style14
+        {
+            width: 417px;
+        }
+.style15
+        {
+            font-family: Tahoma;
+            color: red;
+        }
+.link {
+    padding:2px;
+    margin:2px;
+    color:yellow;
+    
+}
