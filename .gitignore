@@ -1,24 +1,80 @@
-# Exclude the .htaccess file
-.htaccess
+@@ -0,0 +1,79 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
 
-# Exclude any PSD/AI source
-*.psd
-*.ai
- 
-# Exclude the build products
-build/*
-*.[oa]
+# Precompiled Headers
+*.gch
+*.pch
 
-# Exclude OS X folder attributes
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
 .DS_Store
- 
-# Exclude Text Files
-*.txt
-# Except read me
-!README.txt
+.AppleDouble
+.LSOverride
 
-# Exclude log files
-*.log
+# Thumbnails
+._*
 
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
 
- 
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
